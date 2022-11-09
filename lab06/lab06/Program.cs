@@ -3,28 +3,39 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
+//using System.Globalization;
+
+//CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
 namespace lab06
 {
     public class Program
     {
-        public static async Task Main()
+        public static async Task Main(string[] args)
         {
             SortedSet<string> countries = new SortedSet<string>();
             List<Weather> weathers = new List<Weather>();
-            /*for (int i = 0; i < 10; ++i)
+            for (; weathers.Count() < 10;)
             {
                 weathers.Add(new Weather());
+                Thread.Sleep(1000);
             }
             foreach (var weather in weathers)
             {
                 await weather.genResponse();
-                weather.printInfo();
-            }*/
-            for (int i = 0; i < 20; ++i)
-            {
-                weathers.Add(new Weather());
+                if (weather.Country is null || weather.Name is null)
+                {
+                    continue;
+                } else
+                {
+                    weather.printInfo();
+                }
             }
+            foreach (var weather in weathers)
+            {
+                weather.printInfo();
+            }
+            
             double average_temp = 0;
             foreach (var weather in weathers)
             {
@@ -34,27 +45,27 @@ namespace lab06
             }
             Console.WriteLine($"Average temperature: {average_temp}");
             
-            var select_min_max = from weath in weathers
+            var min_max = from weath in weathers
                                  orderby weath.Temp
                                  select weath;
-            Console.WriteLine($"Max: {select_min_max.Last()}, Min: {select_min_max.First()}");
+            Console.WriteLine($"Max: {min_max.Last()}, Min: {min_max.First()}");
 
             Console.WriteLine($"Countries: {countries.Count}");
 
-            var clear_sky_country = from weath in weathers
+            var clear_sky = from weath in weathers
                                     where (weath.Description == "clear sky")
                                     select weath;
-            Console.WriteLine($"First country with clear sky: {clear_sky_country.First().Country}");
+            Console.WriteLine($"First country with clear sky: {clear_sky.First().Country}");
 
-            var rainy_country = from weath in weathers
+            var rainy = from weath in weathers
                                 where (weath.Description == "rain")
                                 select weath;
-            Console.WriteLine($"First country with rain: {rainy_country.First().Description}");
+            Console.WriteLine($"First country with rain: {rainy.First().Description}");
 
-            var few_clouds_country = from weath in weathers
+            var few_clouds = from weath in weathers
                                      where (weath.Description == "few clouds")
                                      select weath;
-            Console.WriteLine($"First country with few clouds: {few_clouds_country.First().Description}");
+            Console.WriteLine($"First country with few clouds: {few_clouds.First().Description}");
         }
     } 
 }
