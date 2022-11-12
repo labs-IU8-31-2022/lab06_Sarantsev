@@ -1,8 +1,12 @@
 ﻿<Properties StartupConfiguration="{C89BC9E4-69A4-4858-93CD-8AAF64B5B2B1}|Default">
+  <MonoDevelop.Ide.ItemProperties.lab06 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="lab06/Program.cs">
     <Files>
-      <File FileName="lab06/Weather.cs" Line="75" Column="32" />
-      <File FileName="lab06/Program.cs" Line="62" Column="46" />
+      <File FileName="lab06/Program.cs" Line="57" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,10 +22,5 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.lab06 PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

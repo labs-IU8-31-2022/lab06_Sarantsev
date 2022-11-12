@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XcrNjkxSZRtr81xtqybR3MLxePDEmZg2EyZQhbwDF3SzC8W07s5RjIhi7WvqAmFhKTKLPHNiTuRnDRlcfm8OPg==",
+  "dgSpecHash": "PZLbO9kL+3cPHTb8KFfHA4bbuvaLXJ7hcBRp90oul/jbZX79iP95WnIKSNiXeQoeo/vAI0fzpl0rFGVwq+G2Zw==",
   "success": true,
-  "projectFilePath": "/Users/daniildanilov/Projects/lab06/lab06/lab06.csproj",
+  "projectFilePath": "/Users/daniildanilov/lab06_Sarantsev/lab06/lab06/lab06.csproj",
   "expectedPackageFiles": [
     "/Users/daniildanilov/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
   ],

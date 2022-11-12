@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/daniildanilov/Projects/lab06/lab06/lab06.csproj",
+      "projectUniqueName": "/Users/daniildanilov/lab06_Sarantsev/lab06/lab06/lab06.csproj",
       "projectName": "lab06",
-      "projectPath": "/Users/daniildanilov/Projects/lab06/lab06/lab06.csproj",
+      "projectPath": "/Users/daniildanilov/lab06_Sarantsev/lab06/lab06/lab06.csproj",
       "packagesPath": "/Users/daniildanilov/.nuget/packages/",
-      "outputPath": "/Users/daniildanilov/Projects/lab06/lab06/obj/",
+      "outputPath": "/Users/daniildanilov/lab06_Sarantsev/lab06/lab06/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/daniildanilov/.nuget/NuGet/NuGet.Config"

@@ -23,6 +23,8 @@ namespace lab06
             lon_ = genLon();
         }
 
+        public Weather(string country, string name, string temp, string description) =>
+        (Country, Name, Temp, Description) = (country, name, temp, description);
 
         public string genLat()
         {
@@ -63,14 +65,14 @@ namespace lab06
         public void printInfo()
         {
             Thread.Sleep(1000);
-            Console.WriteLine("Start printing a content: ");
+            Console.WriteLine("Start printing a content...");
             Console.WriteLine();
             Console.WriteLine($"Country: {Country}");
             Console.WriteLine($"Name: {Name}");
             Console.WriteLine($"Temp: {Temp}");
             Console.WriteLine($"Description: {Description}");
             Console.WriteLine();
-            Console.WriteLine("End printing a content: ");
+            Console.WriteLine("End printing a content");
             Console.WriteLine("###############################################");
             Thread.Sleep(1000);
         }
